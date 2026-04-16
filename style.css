@@ -16,6 +16,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #222325;
+  padding-top: 80px;
+  min-height: 2000px;
 }
 
 /* Navbar */
@@ -23,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.4rem 7%;
+  padding: 0.8rem 7%;
   background-color: var(--primary);
   border-bottom: 1px solid #3a35411f;
   position: fixed;
@@ -31,6 +33,11 @@ body {
   left: 0;
   right: 0;
   z-index: 9999;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
 }
 
 .navbar .navbar-logo {
@@ -44,14 +51,49 @@ body {
   color: #f64920;
 }
 .navbar .navbar-nav a {
-  color: #0955ee;
+  color: #333333ad;
   display: inline-block;
   font-size: 16px;
   margin: 0 1rem;
 }
 
+.navbar .navbar-nav .navbar-link {
+  margin-right: 1.5rem;
+  font-size: 16px;
+}
+
 .navbar .navbar-nav .avatar img {
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  display: block;
+}
+
+/* hero section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(assets/image/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 5%;
+  }
+
+  .navbar .navbar-nav .navbar-link {
+    margin-right: 1rem;
+    font-size: 14px;
+  }
+
+  .navbar .navbar-nav .avatar img {
+    width: 36px;
+    height: 36px;
+  }
 }
