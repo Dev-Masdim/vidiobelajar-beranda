@@ -451,11 +451,41 @@ body {
 
 /* Tablet */
 @media (max-width: 768px) {
+  .newateller {
+    padding: 4rem 2rem;
+  }
+  .newsletter .content h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Mobile */
 @media (max-width: 450px) {
-  html {
-    font-size: 53%;
+  .newsletter {
+    padding: 3rem 1.5rem;
+    margin: 2rem 5%;
+  }
+
+  .newsletter .content h2 {
+    font-size: 1.25rem;
+  }
+
+  .newsletter .content p {
+    font-size: 0.9rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .input-field {
+    padding-inline: 15px;
+  }
+
+  .btn-submit {
+    position: static;
+    width: 100%;
+    height: 3rem;
   }
 }
